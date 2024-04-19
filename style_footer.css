@@ -1,0 +1,14 @@
+footer {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+}
+
+.footer_content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 11rem;
+    max-width: 100%;
+    flex-wrap: wrap;
+}

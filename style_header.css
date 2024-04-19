@@ -9,11 +9,16 @@ body {
 .header-section {
     height: 700px;
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 header {
     display: flex;
     position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
 }
 
 .header-content {
@@ -29,13 +34,14 @@ header {
     inset: 0;
     filter: brightness(47%);
     margin-top: -1.3rem;
+    object-fit: cover;
 }
 
 .netflix-logo img {
+    margin-top: 1rem;
     width: 10.5rem;
     height: 3rem;
     background: rgba(0, 0, 0, 0);
-    margin-left: 11.2rem;
 }
 
 .image-container strong {
@@ -55,7 +61,6 @@ header {
 
 .taxt-container {
     position: absolute;
-
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -87,7 +92,6 @@ header {
     font-size: 16px;
     height: 2rem;
     width: 9rem;
-    margin-left: 45.5rem;
 }
 
 .email-button {
