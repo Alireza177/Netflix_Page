@@ -1,14 +1,3 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-
-    background: black;
-}
-
 main {
     margin-top: 3rem;
     margin-bottom: -27rem;
@@ -22,14 +11,14 @@ main {
     color: white;
 }
 
-.first-main {
+.text-main {
     font-size: 1.7rem;
     max-width: 50%;
     text-align: left;
     padding-right: 3rem;
 }
 
-.image-container-netflix {
+.netflix-image-container {
     display: flex;
     justify-content: flex-end;
     overflow: hidden;
