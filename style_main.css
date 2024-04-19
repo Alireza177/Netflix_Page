@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background: black;
+    margin-top: -3.6rem;
+    margin-bottom: -3rem;
+}
+
+.main-section {
+    display: flex;
+    background-color: black;
+    padding: 2rem;
+    color: white;
+    flex-direction: row;
+
+}
+
+.first-main {
+    font-size: 1.7rem;
+    flex-direction: column;
+    max-width: 620px;
+    margin-top: 10rem;
+    margin-left: 9rem;
+    margin-bottom: 10rem;
+    text-align: left;
+}
+
+.image-container-nexflix {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 124.1%;
+    left: 73.3%;
+    transform: translate(-50%, -50%);
+    width: 30.5%;
+    height: 36%;
+}

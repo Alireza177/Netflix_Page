@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header-section {
+    height: 700px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    position: absolute;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+
+.image-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    filter: brightness(47%);
+    margin-top: -1.3rem;
+}
+
+.netflix-logo img {
+    width: 10.5rem;
+    height: 3rem;
+    background: rgba(0, 0, 0, 0);
+    margin-left: 11.2rem;
+}
+
+.image-container strong {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3.7rem;
+    font-weight: 400;
+    text-align: center;
+    z-index: 1;
+    white-space: nowrap;
+    font-family: "Anton", sans-serif;
+    font-style: normal;
+}
+
+.taxt-container {
+    position: absolute;
+
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    z-index: 1;
+    white-space: nowrap;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.text-details-container {
+    top: 57%;
+    font-size: 1.8rem;
+}
+
+.text-details-container2 {
+    top: 67%;
+    font-size: 1.3rem;
+}
+
+.language-button {
+    background-color: rgba(74, 62, 62, 0.653);
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    height: 2rem;
+    width: 9rem;
+    margin-left: 45.5rem;
+}
+
+.email-button {
+    position: absolute;
+    background-color: rgba(74, 62, 62, 0.653);
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    height: 3.5rem;
+    width: 25rem;
+    top: 75%;
+    left: 30%;
+}
+
+.loggin-button {
+    background-color: red;
+    border: 1px red;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    height: 2rem;
+    width: 6rem;
+    margin-left: 1.5rem;
+}
+
+.get-start-button {
+    position: absolute;
+    background-color: red;
+    border: 1px red;
+    border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 1.5rem;
+    height: 3.5rem;
+    width: 12rem;
+    top: 75%;
+    left: 57%;
+}
+
+.get-start-button span {
+    vertical-align: middle;
+}
+
+.white-color {
+    color: white;
+}
+
+.separator {
+    border: none;
+    border-top: 0.5rem solid #342e2e;
+    margin-top: -2.7rem;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
