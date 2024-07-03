@@ -8,106 +8,74 @@ body {
     background: black;
 }
 
-header {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-}
-
 .header-section {
-    height: 700px;
+    min-height: 700px;
     position: relative;
-    display: flex;
-    justify-content: center;
 }
 
 .header-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-right: 14rem;
 }
 
 .background-image-container {
     position: absolute;
     width: 100%;
     height: 100%;
-    inset: 0;
     filter: brightness(47%);
     margin-top: -1.3rem;
-    object-fit: cover;
+    overflow: hidden;
 }
 
 .netflix-logo img {
-    margin-top: 1rem;
-    width: 10.5rem;
-    height: 3rem;
+    margin-top: 0.7rem;
+    width: 9.5rem;
+    height: 2.5rem;
     background: rgba(0, 0, 0, 0);
-}
-
-.background-image-container strong {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 3.7rem;
-    font-weight: 400;
-    text-align: center;
-    z-index: 1;
-    white-space: nowrap;
-    font-family: "Anton", sans-serif;
-    font-style: normal;
+    margin-left: 12rem;
 }
 
 .text-container {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
     font-weight: 100;
-    text-align: center;
-    z-index: 1;
-    white-space: nowrap;
     font-family: sans-serif;
     font-style: normal;
 }
 
-.text-details-container {
-    top: 57%;
-    font-size: 1.8rem;
-}
-
-.text-details-container2 {
-    top: 67%;
-    font-size: 1.3rem;
+.text-bigger {
+    font-size: 2.35rem;
+    font-weight: 400;
 }
 
 .language-button {
+    display: flex;
     background-color: rgba(74, 62, 62, 0.653);
     border: 1px solid white;
     border-radius: 6px;
     color: white;
-    display: flex;
+    justify-content: center;
     align-items: center;
     font-size: 16px;
-    height: 2rem;
-    width: 9rem;
+    padding: 0.25rem 0.5rem;
+    height: auto;
+    width: auto;
+    max-height: 2rem;
 }
 
 .email-button {
-    position: absolute;
+    display: flex;
     background-color: rgba(74, 62, 62, 0.653);
     border: 1px solid white;
     border-radius: 6px;
     color: white;
-    display: flex;
     align-items: center;
+    justify-content: flex-start;
+    padding: 0.25rem 0.5rem;
     font-size: 16px;
     height: 3.5rem;
     width: 25rem;
-    top: 75%;
-    left: 30%;
 }
 
 .loggin-button {
@@ -123,21 +91,25 @@ header {
 }
 
 .get-start-button {
-    position: absolute;
+    display: flex;
     background-color: red;
     border: 1px red;
     border-radius: 6px;
     color: white;
-    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.25rem;
     font-size: 1.5rem;
     height: 3.5rem;
     width: 12rem;
-    top: 75%;
-    left: 57%;
 }
 
-.get-start-button span {
-    vertical-align: middle;
+.e-post-and-get-start-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 
 .white-color {
@@ -151,4 +123,100 @@ header {
     position: absolute;
     width: 100%;
     top: 100%;
+}
+
+.first-header-container {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+}
+
+.second-header {
+    display: flex;
+    position: relative;
+    margin-top: 12rem;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (max-width : 960px) {
+    .header-section {
+        min-height: 800px;
+    }
+
+    .netflix-logo img {
+        margin-top: 1rem;
+        width: 8.5rem;
+        height: 2rem;
+        background: rgba(0, 0, 0, 0);
+        margin-left: 5rem;
+    }
+
+    .header-content {
+        margin-right: 6rem;
+    }
+}
+
+@media (max-width: 780px) {
+    .second-header {
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 690px) {
+    .header-section {
+        min-height: 900px;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .netflix-logo img {
+        margin-top: 0.7rem;
+        width: 5rem;
+        height: 2rem;
+        background: rgba(0, 0, 0, 0);
+        margin-left: 2rem;
+    }
+
+    .header-content {
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 460px) {
+    .email-button {
+        height: 3.5rem;
+        width: auto;
+    }
+
+    .get-start-button {
+        height: auto;
+        width: auto;
+    }
+}
+
+@media (max-width: 265px) {
+
+    .background-image-container {
+        width: 400%;
+        height: 105%;
+    }
+
+    .separator {
+        margin-top: 1.9rem;
+        width: 400%;
+    }
+
+    .separator2 {
+        width: 400%;
+    }
 }

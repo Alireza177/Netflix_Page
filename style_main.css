@@ -7,6 +7,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
     padding: 2rem;
     color: white;
 }
@@ -24,7 +25,7 @@ main {
     overflow: hidden;
 }
 
-.image-container-netflix img {
+.size {
     max-width: 100%;
     height: auto;
 }
@@ -33,4 +34,20 @@ main {
     border: none;
     border-top: 0.5rem solid #342e2e;
     margin-top: 32rem;
+}
+
+@media (max-width: 1383px) {
+    .main-section {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 736px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    .size {
+        max-width: 95%;
+    }
 }
